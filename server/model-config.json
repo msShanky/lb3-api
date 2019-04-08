@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mysql-skii-cms",
+    "options": {
+      "realmRequired": false
+    }
+  },
+  "AccessToken": {
+    "dataSource": "mysql-skii-cms",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysql-skii-cms",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "mysql-skii-cms",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mysql-skii-cms",
+    "public": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql-skii-cms": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "url": "",
+    "database": "skii-cms-dev",
+    "password": "toor",
+    "name": "mysql-skii-cms",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
